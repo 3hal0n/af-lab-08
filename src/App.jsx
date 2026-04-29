@@ -3,6 +3,7 @@ import Greeting from './components/Greeting'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import ProductCard from './components/ProductCard'
+import Button from './components/Button'
 
 function App() {
   return (
@@ -28,7 +29,9 @@ function App() {
             description="Description for Product 3."
           />
         </div>
+        <Button label="View All Products" variant="primary" size="lg" className="mx-auto mb-12 px-6 py-6 mt-6" />
       </div>
+      
       <Footer />
     </div>
   )
