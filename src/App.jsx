@@ -4,6 +4,7 @@ import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import ProductCard from './components/ProductCard'
 import Button from './components/Button'
+import Banner from './components/Banner'
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
         </div>
         <Button label="View All Products" variant="primary" size="lg" className="mx-auto mb-12 px-6 py-6 mt-6" />
       </div>
-      
+      <Banner message="Unlock Your Potential with Our Exclusive Offer!" />
       <Footer />
     </div>
   )
