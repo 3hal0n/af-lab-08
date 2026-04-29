@@ -6,6 +6,11 @@ import ProductCard from './components/ProductCard'
 import Button from './components/Button'
 import Banner from './components/Banner'
 import Testimonial from './components/Testimonial'
+import product1 from './assets/images/product1.jpg'
+import product2 from './assets/images/product2.jpg'
+import product3 from './assets/images/product3.jpg'
+import testimonial1 from './assets/images/testimonial1.jpg'
+import testimonial2 from './assets/images/testimonial2.jpg'
 
 function App() {
   return (
@@ -16,17 +21,17 @@ function App() {
         <h2 className="text-2xl font-bold text-slate-900 mb-8">Our Products</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <ProductCard 
-            image="../assets/images/product1.jpg"
+            image={product1}
             title="Product 1"
             description="Description for Product 1."
           />
           <ProductCard 
-            image="../assets/images/product2.jpg"
+            image={product2}
             title="Product 2"
             description="Description for Product 2."
           />
           <ProductCard 
-            image="../assets/images/product3.jpg"
+            image={product3}
             title="Product 3"
             description="Description for Product 3."
           />
@@ -37,12 +42,12 @@ function App() {
       <Testimonial 
         quote="This product has completely transformed how I approach design challenges."
         name="Alex Johnson"
-        photo="../assets/images/testimonial1.jpg"
+        photo={testimonial1}
       />
       <Testimonial 
         quote="I've tried many similar products, but this one stands out for its exceptional quality and user-friendly interface."
         name="Sarah Williams"
-        photo="../assets/images/testimonial2.jpg"
+        photo={testimonial2}
       />
       <Footer />
     </div>
