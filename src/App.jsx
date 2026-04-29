@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import ProductCard from './components/ProductCard'
 import Button from './components/Button'
 import Banner from './components/Banner'
+import Testimonial from './components/Testimonial'
 
 function App() {
   return (
@@ -33,6 +34,16 @@ function App() {
         <Button label="View All Products" variant="primary" size="lg" className="mx-auto mb-12 px-6 py-6 mt-6" />
       </div>
       <Banner message="Unlock Your Potential with Our Exclusive Offer!" />
+      <Testimonial 
+        quote="This product has completely transformed how I approach design challenges."
+        name="Alex Johnson"
+        photo="../assets/images/testimonial1.jpg"
+      />
+      <Testimonial 
+        quote="I've tried many similar products, but this one stands out for its exceptional quality and user-friendly interface."
+        name="Sarah Williams"
+        photo="../assets/images/testimonial2.jpg"
+      />
       <Footer />
     </div>
   )
